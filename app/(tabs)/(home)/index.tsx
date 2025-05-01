@@ -1,5 +1,6 @@
 import { Link } from "expo-router";
-import { Text, View, Button } from "react-native";
+import { Text, View } from "react-native";
+import { CustomButton } from "@/components/CustomButton";
 
 export default function Index() {
   return (
@@ -11,8 +12,8 @@ export default function Index() {
       }}
     >
       <Text>Home</Text>
-      <Link href={"./details"} asChild>
-        <Button title="View Details" color={'#f4511e'}/>
+      <Link href="/details" asChild>
+        <CustomButton title={"View Details"} />
       </Link>
     </View>
   );
