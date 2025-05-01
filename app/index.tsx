@@ -1,4 +1,5 @@
-import { Text, View } from "react-native";
+import { Link } from "expo-router";
+import { Text, View, Button } from "react-native";
 
 export default function Index() {
   return (
@@ -10,6 +11,9 @@ export default function Index() {
       }}
     >
       <Text>Home</Text>
+      <Link href={"./details"} asChild>
+        <Button title="View Details" color={'#f4511e'}/>
+      </Link>
     </View>
   );
 }
